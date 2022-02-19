@@ -8,17 +8,15 @@
 }
 
 body {
-    width: 100vh;
-    height: 100vh;
     background-color: #bcd4e6;
 }
 
 /* Estilos Menu */
 .navbarItems a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     &:hover {
-        font-size: 2rem;
+        font-size: 1rem;
         text-transform: uppercase;
     }
 }
@@ -27,35 +25,18 @@ body {
 header {
     background-color: #99c1de;
     border: solid #a8dadc 2px;
-
     .navbarTitulo {
         color: #560bad;
-        text-shadow: 1px 2px $rosa;
+        text-shadow: 1px 2px rgb(238, 219, 114);
         text-align: center;
         margin: 10px;
     }
-    .tituloAnimado {
-        animation-name: tituloAnimado;
-        animation-iteration-count: 1;
-        animation-duration: 2s;
-        @keyframes tituloAnimado {
-            from {
-                transform: translate(-500px);
-                opacity: 0;
-            }
-        
-            to {
-                transform: translate(0);
-                opacity: 1;
-            }
-        }
-    }  
 }
 
 /* Estilos formularios */
 .formulario {
     background-color: lightgrey;
-    border: 15px solid $rojo;
+    border: 15px solid red;
     padding: 50px;
     margin: 50px;
 
@@ -73,16 +54,15 @@ header {
     font-weight: bold;
     text-align: center;
     text-shadow: 1px 2px #f8f1f1;
-    color: $rosa;
+    color: #560bad;;
 
 }
 
 /*Estilos carrusel, imagenes e iframe*/
-.Carrusel {
+.carrusel {
     border: outset pink 5px;
     background-color: white;
     margin-top: 10px;
-    margin-left: 10px;
 }
 .imgNosotros {
     width: 25vh;
@@ -97,9 +77,7 @@ header {
     background-color: white;
     border: outset 4px #fde2e4;
     padding: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 100vh;
+    width: 50vh;
     height: 50vh;
 }
 
@@ -121,7 +99,5 @@ footer {
 
 @import "estilosDesktop";
 @import "estilosTablets";
+@import "variables";
 
-//VARIABLES
-$rojo: red;
-$rosa: rgba(255, 1, 213, 0.918);

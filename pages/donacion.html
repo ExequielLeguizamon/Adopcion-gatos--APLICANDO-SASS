@@ -4,12 +4,9 @@
 <head>
   <!--Link a CSS Bootstrap-->
   <link rel="stylesheet" href="../bootstrap-local/css/bootstrap.css">
-  <!--Link a JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
   <!--Link a CSS-->
   <link rel="stylesheet" href="../css/estilo.css" />
+  <!--Etiquetas meta-->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,38 +21,32 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body class="container-fluid">
-  <main class="row">
+<body>
     <!--Header-->
-    <header class="col">
+    <header class="container-fluid">
       <h1 class="navbarTitulo tituloAnimado">Donación</h1>
     </header>
-    <!--Menu-->
-    <nav class="animate__animated animate__rotateInUpLeft navbar navbar-dark bg-primary navbar-expand-lg col">
-      <nav class="navbar navbar-light bg-light"></nav>
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item navbarItems"><a class="nav-link active" aria-current="page"
-                href="../index.html">Inicio</a></li>
-            <li class="nav-item navbarItems"><a class="nav-link active" href="./galeria.html">Galeria</a></li>
-            <li class="nav-item navbarItems"><a class="nav-link active" href="./adopcion.html">Adopción</a></li>
-            <li class="nav-item navbarItems"><a class="nav-link active" href="./donacion.html">Donación</a></li>
-            <li class="nav-item navbarItems"><a class="nav-link active" href="./nosotros.html">Nosotros</a></li>
-          </ul>
-        </div>
-    </nav>
-    </div>
-  </main>
 
+    <!--Menu-->
+    <nav class="container-fluid">
+      <nav class="animate__animated animate__fadeInDown navbar navbar-dark bg-primary navbar-expand-lg row">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+       <div class="collapse navbar-collapse justify-content-end col" id="navbarNav">
+       <ul class="navbar-nav">
+        <li class="nav-item navbarItems"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+        <li class="nav-item navbarItems"><a class="nav-link active" href="./galeria.html">Galeria</a></li>
+        <li class="nav-item navbarItems"><a class="nav-link active" href="./adopcion.html">Adopción</a></li>
+        <li class="nav-item navbarItems"><a class="nav-link active" href="./donacion.html">Donación</a></li>
+        <li class="nav-item navbarItems"><a class="nav-link active" href="./nosotros.html">Nosotros</a></li>
+       </ul>
+       </div>
+      </nav>
+     </nav>
 
   <!--Formulario de donación-->
-  
-    <form class="row g-3 formulario">
+    <form class="row g-3 formulario centrar">
       <h1>Donación</h1>
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Titular</label>
@@ -86,27 +77,31 @@
       </div>
     </form>
 
-
-  <section class="row">
-    <p class="textoDonacion col">Cada donación sera destinada para la mejora y abastecimiento del refugio, ademas de cubrir
+    <!--Texto-->
+  <section>
+    <p class="textoDonacion">Cada donación sera destinada para la mejora y abastecimiento del refugio, ademas de cubrir
       los gastos medicos de cada minino.</p>
   </section>
 
   <!--Footer-->
-  <footer class="row">
-    <div class="container-fluid col">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../img/favicon.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">S.O.S Felinos
-        Tucumán</a>
-    </div>
-    <ul class="footerItems col">
-      <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
-      <li>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-      </li>
-      <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
-    </ul>
+  <footer class="container-fluid">
+    <nav class="row">
+      <div class="col">
+        <a class="navbar-brand" href="../index.html">
+        <img src="../img/favicon.jpg" alt="" width="30" height="24" class="d-inline-block align-text-top">S.O.S Felinos Tucumán</a>
+      </div>
+      <ul class="footerItems col">
+        <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+      </ul>
+    </nav>
   </footer>
+   <!--Link a JS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+ </script>
 </body>
-
 </html>

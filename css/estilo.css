@@ -5,8 +5,6 @@
   font-family: 'Indie Flower', sans-serif; }
 
 body {
-  width: 100vh;
-  height: 100vh;
   background-color: #bcd4e6; }
 
 /* Estilos Menu */
@@ -14,7 +12,7 @@ body {
   text-decoration: none;
   color: white; }
   .navbarItems a:hover {
-    font-size: 2rem;
+    font-size: 1rem;
     text-transform: uppercase; }
 
 /* Estilos header */
@@ -23,21 +21,9 @@ header {
   border: solid #a8dadc 2px; }
   header .navbarTitulo {
     color: #560bad;
-    text-shadow: 1px 2px #b5179e;
+    text-shadow: 1px 2px #eedb72;
     text-align: center;
     margin: 10px; }
-  header .tituloAnimado {
-    animation-name: tituloAnimado;
-    animation-iteration-count: 1;
-    animation-duration: 2s; }
-
-@keyframes tituloAnimado {
-  from {
-    transform: translate(-500px);
-    opacity: 0; }
-  to {
-    transform: translate(0);
-    opacity: 1; } }
 
 /* Estilos formularios */
 .formulario {
@@ -57,14 +43,13 @@ header {
   font-weight: bold;
   text-align: center;
   text-shadow: 1px 2px #f8f1f1;
-  color: rgba(255, 0, 212, 0.918); }
+  color: #560bad; }
 
 /*Estilos carrusel, imagenes e iframe*/
-.Carrusel {
+.carrusel {
   border: outset pink 5px;
   background-color: white;
-  margin-top: 10px;
-  margin-left: 10px; }
+  margin-top: 10px; }
 
 .imgNosotros {
   width: 25vh;
@@ -79,9 +64,7 @@ header {
   background-color: white;
   border: outset 4px #fde2e4;
   padding: 5px;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 100vh;
+  width: 50vh;
   height: 50vh; }
 
 footer {
@@ -107,33 +90,29 @@ footer {
     line-height: 1.6;
     font-size: large;
     font-weight: bold;
-    text-shadow: 1px 2px #f8f1f1;
-    color: rgba(255, 1, 213, 0.918);
+    text-shadow: 1px 2px #eedb72;
+    color: #560bad;
     margin: 4%; }
   .textoDonacion {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     margin: 10%;
-    text-shadow: 1px 2px #e7e5e5;
-    color: rgba(233, 20, 233, 0.918); }
+    text-shadow: 1px 2px #eedb72;
+    color: #560bad; }
   .titulos {
     color: #560bad;
-    text-shadow: 1px 2px #b5179e;
+    text-shadow: 1px 2px rgba(255, 1, 213, 0.918);
     text-align: center;
     font-size: 10vh; }
   /*imagenes*/
   .imgNosotros {
-    width: 50%;
+    width: 50vh;
     height: 50%;
     padding: 2px;
-    margin-left: 25%;
     margin-top: 10px;
     border: outset pink 5px;
     background-color: white; }
-    .imgNosotros:hover {
-      -webkit-transform: scale(1.3);
-      transform: scale(1.3); }
   /* Estilos footer */
   footer {
     background-color: lightgray;
@@ -146,44 +125,60 @@ footer {
       display: inline-block; }
     footer .footerItems {
       text-align: end;
-      list-style: none; } }
+      list-style: none; }
+  /*Iframe*/
+  .video {
+    background-color: white;
+    border: outset 4px #fde2e4;
+    padding: 5px;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 100vh;
+    height: 50vh; }
+  .tituloAnimado {
+    animation-name: tituloAnimado;
+    animation-iteration-count: 1;
+    animation-duration: 2s; }
+  @keyframes tituloAnimado {
+    from {
+      transform: translate(-500px);
+      opacity: 0; }
+    to {
+      transform: translate(0);
+      opacity: 1; } } }
 
 /*************** Tablets ***************/
 @media (min-width: 480px) and (max-width: 1023px) {
-  body {
-    width: 100vh;
-    height: 100vh;
-    background-color: #deebdd;
-    background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%); }
-  /*Estilos header*/
-  header {
-    border: dashed #a8dadc 2px;
-    background-color: #efffe9;
-    text-transform: uppercase;
-    text-align: center; }
   /* Estilos textos */
   .textos {
     text-align: center;
     line-height: 1.6;
     font-size: large;
     font-weight: bold;
-    text-shadow: 2px 3px #faf9f9;
-    color: rgba(255, 4, 4, 0.918);
+    text-shadow: 1px 2px white;
+    color: #560bad;
     margin: 4%; }
   .textoDonacion {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
     margin: 10%;
-    text-shadow: 1px 2px #e7e5e5;
-    color: rgba(233, 20, 20, 0.918); }
+    text-shadow: 1px 2px;
+    color: #560bad; }
   .titulos {
     color: #821df5;
-    text-shadow: 1px 2px #db0606;
+    text-shadow: 1px 2px;
     text-align: center;
     font-size: 15vh; }
   .imgNosotros {
     width: 65vh;
     height: 50vh;
     border: dashed #e06c7f 10px;
-    background-color: #bbdbbe; } }
+    background-color: #bbdbbe; }
+  .video {
+    background-color: white;
+    border: outset 4px #fde2e4;
+    padding: 5px;
+    margin-left: 10px;
+    width: 100vh;
+    height: 50vh; } }

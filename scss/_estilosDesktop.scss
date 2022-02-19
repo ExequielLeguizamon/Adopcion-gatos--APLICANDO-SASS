@@ -1,3 +1,5 @@
+@import "variables";
+
 
 /*************** Desktop ***************/
 @media (min-width: 1024px) {
@@ -13,8 +15,8 @@
         line-height: 1.6;
         font-size: large;
         font-weight: bold;
-        text-shadow: 1px 2px #f8f1f1;
-        color: $rosa;
+        text-shadow: 1px 2px rgb(238, 219, 114);
+        color:  #560bad;
         margin: 4%;
     }
     .textoDonacion {
@@ -22,27 +24,25 @@
         font-size: 2rem;
         font-weight: bold;
         margin: 10%;
-        text-shadow: 1px 2px #e7e5e5;
-        color: $rosa;
+        text-shadow: 1px 2px rgb(238, 219, 114);
+        color: #560bad;
     }
     .titulos {
         color: #560bad;
-        text-shadow: 1px 2px #b5179e;
+        text-shadow: 1px 2px $rosas;
         text-align: center;
         font-size: 10vh;
     }
 /*imagenes*/
     .imgNosotros {
-        width: 50%;
+        width: 50vh;
         height: 50%;
         padding: 2px;
-        margin-left: 25%;
         margin-top: 10px;
         border: outset pink 5px;
         background-color: white;
-        &:hover {-webkit-transform:scale(1.3);transform:scale(1.3);
-        }
     }
+
 /* Estilos footer */
     footer {
     background-color: lightgray;
@@ -59,4 +59,32 @@
         list-style: none;
      } 
     }
+
+/*Iframe*/
+    .video {
+        background-color: white;
+        border: outset 4px #fde2e4;
+        padding: 5px;
+        margin-left: 10%;
+        margin-right: 5%;
+        width: 100vh;
+        height: 50vh;
+    }
+
+    .tituloAnimado {
+        animation-name: tituloAnimado;
+        animation-iteration-count: 1;
+        animation-duration: 2s;
+        @keyframes tituloAnimado {
+            from {
+                transform: translate(-500px);
+                opacity: 0;
+            }
+        
+            to {
+                transform: translate(0);
+                opacity: 1;
+            }
+        }
+    }  
 }

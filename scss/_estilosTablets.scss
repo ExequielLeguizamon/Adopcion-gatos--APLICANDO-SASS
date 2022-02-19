@@ -1,20 +1,8 @@
+@import "variables";
+
+
 /*************** Tablets ***************/
 @media (min-width: 480px) and (max-width: 1023px) {
-
-    body {
-        width: 100vh;
-        height: 100vh;
-        background-color: #deebdd;
-        background-image: linear-gradient(315deg, #deebdd 0%, #bbdbbe 74%);
-    }
-
-    /*Estilos header*/
-    header {
-        border: dashed #a8dadc 2px;
-        background-color: #efffe9;
-        text-transform: uppercase;
-        text-align: center;
-    }
 
     /* Estilos textos */
     .textos {
@@ -22,8 +10,8 @@
         line-height: 1.6;
         font-size: large;
         font-weight: bold;
-        text-shadow: 2px 3px #faf9f9;
-        color: $rojo;
+        text-shadow: 1px 2px white;
+        color: #560bad;
         margin: 4%;
     }
     .textoDonacion {
@@ -31,21 +19,28 @@
         font-size: 2rem;
         font-weight: bold;
         margin: 10%;
-        text-shadow: 1px 2px #e7e5e5;
-        color: $rojo;
+        text-shadow: 1px 2px;
+        color:  #560bad;
     }
     .titulos {
         color: #821df5;
-        text-shadow: 1px 2px $rojo;
+        text-shadow: 1px 2px;
         text-align: center;
         font-size: 15vh;
     }
-
     .imgNosotros {
         width: 65vh;
         height: 50vh;
         border: dashed rgb(224, 108, 127) 10px;
         background-color:  #bbdbbe;
+    }
+    .video {
+        background-color: white;
+        border: outset 4px #fde2e4;
+        padding: 5px;
+        margin-left: 10px;
+        width: 100vh;
+        height: 50vh;
     }
 }
 
