@@ -1,0 +1,13 @@
+/*** Mixins ***/
+@mixin tamaño ($argumento1 , $argumento2) {
+    width: $argumento1;
+    height: $argumento2;    
+}
+
+.imgNosotros {
+    @include tamaño (25vh, 25vh)
+}
+
+.video {
+    @include tamaño (50vh, 50vh)
+}

@@ -1,0 +1,16 @@
+/* Extend */
+.textos {
+    text-align: center;
+    line-height: 1.6;
+    font-size: large;
+    font-weight: bold;
+    text-shadow: 1px 2px #eedb72;
+    color: #560bad;
+    margin: 4%; 
+}
+
+.textoDonacion {
+    @extend .textos;
+    font-size: 2rem;
+    margin: 10%;
+}

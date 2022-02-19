@@ -1,0 +1,13 @@
+// Mapa
+/*Mapa colores redes sociales footer*/
+$redesColores: (
+    facebook: #3b5998, 
+    instagram:#3f729b,
+    twitter:  #55acee, 
+); 
+
+@each $clave, $valor in $redesColores {
+    .boton-#{$clave} {
+        background-color: $valor;
+    }
+}

@@ -38,7 +38,7 @@ header {
     justify-content: center; }
 
 /* Estilos textos */
-.textos {
+.textos, .textoDonacion {
   font-size: medium;
   font-weight: bold;
   text-align: center;
@@ -52,8 +52,6 @@ header {
   margin-top: 10px; }
 
 .imgNosotros {
-  width: 25vh;
-  height: 25vh;
   padding: 2px;
   margin-left: 25%;
   margin-top: 10px;
@@ -63,10 +61,18 @@ header {
 .video {
   background-color: white;
   border: outset 4px #fde2e4;
-  padding: 5px;
+  padding: 5px; }
+
+/*** Mixins ***/
+.imgNosotros {
+  width: 25vh;
+  height: 25vh; }
+
+.video {
   width: 50vh;
   height: 50vh; }
 
+/* Estilos footer*/
 footer {
   background-color: #bb9f9f;
   text-decoration: none;
@@ -78,19 +84,15 @@ footer {
     text-align: end;
     list-style: none; }
 
-/*************** Desktop ***************/
-@media (min-width: 1024px) {
-  header {
-    background-color: #63a4ff;
-    background-image: linear-gradient(315deg, #83eaf1 0%, #63a4ff 74%);
-    border: solid #a8dadc 2px; }
+/*************** Tablets ***************/
+@media (min-width: 480px) and (max-width: 1023px) {
   /* Estilos textos */
-  .textos {
+  .textos, .textoDonacion {
     text-align: center;
     line-height: 1.6;
     font-size: large;
     font-weight: bold;
-    text-shadow: 1px 2px #eedb72;
+    text-shadow: 1px 2px white;
     color: #560bad;
     margin: 4%; }
   .textoDonacion {
@@ -98,8 +100,33 @@ footer {
     font-size: 2rem;
     font-weight: bold;
     margin: 10%;
-    text-shadow: 1px 2px #eedb72;
+    text-shadow: 1px 2px;
     color: #560bad; }
+  .titulos {
+    color: #821df5;
+    text-shadow: 1px 2px;
+    text-align: center;
+    font-size: 15vh; }
+  .imgNosotros {
+    width: 65vh;
+    height: 50vh;
+    border: dashed #e06c7f 10px;
+    background-color: #bbdbbe; }
+  .video {
+    background-color: white;
+    border: outset 4px #fde2e4;
+    padding: 5px;
+    margin-left: 10px;
+    width: 100vh;
+    height: 50vh; } }
+
+/*************** Desktop ***************/
+@media (min-width: 1024px) {
+  header {
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #83eaf1 0%, #63a4ff 74%);
+    border: solid #a8dadc 2px; }
+  /* Estilos textos */
   .titulos {
     color: #560bad;
     text-shadow: 1px 2px rgba(255, 1, 213, 0.918);
@@ -147,38 +174,26 @@ footer {
       transform: translate(0);
       opacity: 1; } } }
 
-/*************** Tablets ***************/
-@media (min-width: 480px) and (max-width: 1023px) {
-  /* Estilos textos */
-  .textos {
-    text-align: center;
-    line-height: 1.6;
-    font-size: large;
-    font-weight: bold;
-    text-shadow: 1px 2px white;
-    color: #560bad;
-    margin: 4%; }
-  .textoDonacion {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 10%;
-    text-shadow: 1px 2px;
-    color: #560bad; }
-  .titulos {
-    color: #821df5;
-    text-shadow: 1px 2px;
-    text-align: center;
-    font-size: 15vh; }
-  .imgNosotros {
-    width: 65vh;
-    height: 50vh;
-    border: dashed #e06c7f 10px;
-    background-color: #bbdbbe; }
-  .video {
-    background-color: white;
-    border: outset 4px #fde2e4;
-    padding: 5px;
-    margin-left: 10px;
-    width: 100vh;
-    height: 50vh; } }
+/* Extend */
+.textos, .textoDonacion {
+  text-align: center;
+  line-height: 1.6;
+  font-size: large;
+  font-weight: bold;
+  text-shadow: 1px 2px #eedb72;
+  color: #560bad;
+  margin: 4%; }
+
+.textoDonacion {
+  font-size: 2rem;
+  margin: 10%; }
+
+/*Mapa colores redes sociales footer*/
+.boton-facebook {
+  background-color: #3b5998; }
+
+.boton-instagram {
+  background-color: #3f729b; }
+
+.boton-twitter {
+  background-color: #55acee; }

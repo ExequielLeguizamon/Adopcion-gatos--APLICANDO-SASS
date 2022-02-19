@@ -10,23 +10,6 @@
         border: solid #a8dadc 2px;
     }
 /* Estilos textos */
-    .textos {
-        text-align: center;
-        line-height: 1.6;
-        font-size: large;
-        font-weight: bold;
-        text-shadow: 1px 2px rgb(238, 219, 114);
-        color:  #560bad;
-        margin: 4%;
-    }
-    .textoDonacion {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: bold;
-        margin: 10%;
-        text-shadow: 1px 2px rgb(238, 219, 114);
-        color: #560bad;
-    }
     .titulos {
         color: #560bad;
         text-shadow: 1px 2px $rosas;
@@ -88,3 +71,4 @@
         }
     }  
 }
+@import "extend";
